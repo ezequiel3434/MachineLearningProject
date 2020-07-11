@@ -20,8 +20,34 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tomarFoto(_ sender: Any) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
+            
+        } else {
+            print("No se pudo acceder a la camara")
+        }
+        
+        
+        
     }
     @IBAction func seleccionarFoto(_ sender: Any) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            print("No se pudo tener acceso a la libreria de fotos")
+        }
     }
     
     
@@ -76,7 +102,14 @@ extension ViewController: UIImagePickerControllerDelegate{
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-//        if let pickedImage = info[]
+        if let pickedImage = info[.originalImage] as? UIImage {
+            self.dataImage.contentMode = .scaleAspectFill
+            self.dataImage.image = pickedImage
+        }
+        
+        picker.dismiss(animated: true, completion: nil)
+        
+        detectarImagenes()
     }
     
 }
