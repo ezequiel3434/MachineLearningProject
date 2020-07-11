@@ -14,6 +14,7 @@
 		37E95A0224BA2DC8004D8D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E95A0124BA2DC8004D8D7B /* Assets.xcassets */; };
 		37E95A0524BA2DC8004D8D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E95A0324BA2DC8004D8D7B /* LaunchScreen.storyboard */; };
 		37E95A0F24BA2FCB004D8D7B /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 37E95A0E24BA2FCB004D8D7B /* GoogLeNetPlaces.mlmodel */; };
+		37E95A1124BA51E8004D8D7B /* images in Resources */ = {isa = PBXBuildFile; fileRef = 37E95A1024BA51E8004D8D7B /* images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		37E95A0424BA2DC8004D8D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37E95A0624BA2DC8004D8D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E95A0E24BA2FCB004D8D7B /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		37E95A1024BA51E8004D8D7B /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				37E959F724BA2DC8004D8D7B /* MachineLearningProject */,
 				37E959F624BA2DC8004D8D7B /* Products */,
+				37E95A1024BA51E8004D8D7B /* images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E95A1124BA51E8004D8D7B /* images in Resources */,
 				37E95A0524BA2DC8004D8D7B /* LaunchScreen.storyboard in Resources */,
 				37E95A0224BA2DC8004D8D7B /* Assets.xcassets in Resources */,
 				37E95A0024BA2DC8004D8D7B /* Main.storyboard in Resources */,
